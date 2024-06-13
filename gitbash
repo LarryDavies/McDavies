@@ -1,0 +1,25 @@
+#!/bin/bash
+
+### This is a student greade score system ##
+
+echo "Enter Student's Grade"
+read score
+until [ $score -le 100 ]; do
+echo "Invalid score"
+done
+if [$score -ge 70 ] && [ $score -le 100 ]; then
+ echo "Grade A"
+elif [ $score -le 69 ] && [ $score -ge 60 ]; then
+echo "Grade B"
+elif [ $score -le 59 ] && [ $score -ge 50 ]; then
+echo "Grade C"
+elif [ $score -le 49 ] && [ $score -ge 45 ]; then
+echo "Grade D"
+elif [ $score -le 44 ] && [$score -ge 40 ]; then
+echo "Grade E"
+elif [ $score -le 39 ]; then 
+echo "Grade F"
+else 
+echo "Invalid input"
+fi
+Today=$(date) && echo "Today's date is $date"
